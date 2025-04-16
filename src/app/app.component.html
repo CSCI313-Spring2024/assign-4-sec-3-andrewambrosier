@@ -1,1 +1,15 @@
-<div>Hello World!</div>
+<div>
+    <h1>Contact App Test</h1>
+    <app-contact-list
+  *ngIf="view === 'list'"
+  (addNew)="showForm()"
+  (edit)="showForm($event)">
+</app-contact-list>
+
+<app-contact-form
+  *ngIf="view === 'form'"
+  [contact]="editingContact"
+  (cancel)="showList()"
+  (saved)="showList()">
+</app-contact-form>
+</div>

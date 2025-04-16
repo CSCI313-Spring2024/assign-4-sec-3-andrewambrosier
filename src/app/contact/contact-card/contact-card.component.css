@@ -1,0 +1,18 @@
+.contact-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+  }
+  
+  .contact-card h3 {
+    margin-top: 0;
+  }
+  
+  .actions {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+  }
+  

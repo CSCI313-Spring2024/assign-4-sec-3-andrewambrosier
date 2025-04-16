@@ -1,0 +1,14 @@
+<div class="contact-list-header">
+    <h2>My Contacts</h2>
+    <button class="add-button" (click)="onAdd()">Add New Contact</button>
+  </div>
+  
+  <div class="contact-grid">
+    <app-contact-card
+      *ngFor="let contact of contacts"
+      [contact]="contact"
+      (edit)="onEdit($event)"
+      (delete)="deleteContact($event)">
+    </app-contact-card>
+  </div>
+  
